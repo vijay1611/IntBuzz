@@ -1,0 +1,94 @@
+{
+  "questions": [
+    {
+      "question": "What is React Native?",
+      "options": [
+        {"option": "A framework for building web applications", "isCorrect": false},
+        {"option": "A framework for building native mobile applications", "isCorrect": true},
+        {"option": "A JavaScript library for building user interfaces", "isCorrect": false},
+        {"option": "A database management system", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Which language is primarily used in React Native development?",
+      "options": [
+        {"option": "Java", "isCorrect": false},
+        {"option": "Swift", "isCorrect": false},
+        {"option": "JavaScript", "isCorrect": true},
+        {"option": "Kotlin", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What is the equivalent of CSS in React Native?",
+      "options": [
+        {"option": "Style sheets", "isCorrect": false},
+        {"option": "StyleSheet API", "isCorrect": true},
+        {"option": "CSS-in-JS", "isCorrect": false},
+        {"option": "React Style", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Which command is used to create a new React Native project?",
+      "options": [
+        {"option": "react-native start", "isCorrect": false},
+        {"option": "react-native new", "isCorrect": false},
+        {"option": "npx react-native init", "isCorrect": true},
+        {"option": "npm create-react-native-app", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What is the purpose of the 'render' method in a React Native component?",
+      "options": [
+        {"option": "To define the initial state of the component", "isCorrect": false},
+        {"option": "To update the component's state", "isCorrect": false},
+        {"option": "To render the component's UI", "isCorrect": true},
+        {"option": "To handle user input events", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Which component is used to display a scrollable list of items in React Native?",
+      "options": [
+        {"option": "ScrollView", "isCorrect": true},
+        {"option": "FlatList", "isCorrect": true},
+        {"option": "ListView", "isCorrect": false},
+        {"option": "RecyclerView", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What is the purpose of the 'useState' hook in React Native?",
+      "options": [
+        {"option": "To manage navigation state", "isCorrect": false},
+        {"option": "To create reusable custom hooks", "isCorrect": false},
+        {"option": "To manage local component state", "isCorrect": true},
+        {"option": "To handle asynchronous data fetching", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Which component lifecycle method is called when a component is first rendered to the screen?",
+      "options": [
+        {"option": "componentDidMount", "isCorrect": true},
+        {"option": "componentWillMount", "isCorrect": false},
+        {"option": "componentDidRender", "isCorrect": false},
+        {"option": "componentWillRender", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What is the purpose of 'props' in a React Native component?",
+      "options": [
+        {"option": "To define component-specific styles", "isCorrect": false},
+        {"option": "To manage component state", "isCorrect": false},
+        {"option": "To pass data from a parent component to a child component", "isCorrect": true},
+        {"option": "To handle user input events", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What is the purpose of the 'TouchableOpacity' component in React Native?",
+      "options": [
+        {"option": "To handle touch events and provide visual feedback", "isCorrect": true},
+        {"option": "To navigate between screens in a mobile app", "isCorrect": false},
+        {"option": "To display a list of items", "isCorrect": false},
+        {"option": "To manage local component state", "isCorrect": false}
+      ]
+    }
+  ]
+}

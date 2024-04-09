@@ -1,0 +1,94 @@
+{
+  "questions": [
+    {
+      "question": "What is the size of a boolean variable in Java?",
+      "options": [
+        {"option": "1 bit", "isCorrect": true},
+        {"option": "4 bits", "isCorrect": false},
+        {"option": "8 bits", "isCorrect": false},
+        {"option": "Depends on the JVM", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Which keyword is used to define a constant in Java?",
+      "options": [
+        {"option": "const", "isCorrect": false},
+        {"option": "final", "isCorrect": true},
+        {"option": "static", "isCorrect": false},
+        {"option": "constant", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What is the output of the following code snippet?\n\n```java\nint x = 5;\nSystem.out.println(x++);",
+      "options": [
+        {"option": "5", "isCorrect": true},
+        {"option": "6", "isCorrect": false},
+        {"option": "4", "isCorrect": false},
+        {"option": "Compiler error", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Which of the following is NOT a valid Java identifier?",
+      "options": [
+        {"option": "my_variable", "isCorrect": true},
+        {"option": "_myVariable", "isCorrect": false},
+        {"option": "MyVariable", "isCorrect": false},
+        {"option": "$myVariable", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What will happen if you try to compile and run a Java program with a class name different from the file name?",
+      "options": [
+        {"option": "It will compile but throw a runtime error", "isCorrect": false},
+        {"option": "It will compile and run successfully", "isCorrect": false},
+        {"option": "It will fail to compile", "isCorrect": true},
+        {"option": "It will compile but produce unexpected behavior", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Which method is called when an object is created?",
+      "options": [
+        {"option": "start()", "isCorrect": false},
+        {"option": "begin()", "isCorrect": false},
+        {"option": "run()", "isCorrect": false},
+        {"option": "Constructor", "isCorrect": true}
+      ]
+    },
+    {
+      "question": "What is the default value of a local variable in Java?",
+      "options": [
+        {"option": "0", "isCorrect": false},
+        {"option": "null", "isCorrect": false},
+        {"option": "Depends on the data type", "isCorrect": true},
+        {"option": "Undefined", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Which of the following is a NOT valid Java array declaration?",
+      "options": [
+        {"option": "int[] arr = new int[5];", "isCorrect": false},
+        {"option": "int arr[] = new int[5];", "isCorrect": false},
+        {"option": "int[5] arr = new int[5];", "isCorrect": true},
+        {"option": "int arr[] = {1, 2, 3, 4, 5};", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What is the output of the following code snippet?\n\n```java\nString str1 = \"hello\";\nString str2 = \"hello\";\nSystem.out.println(str1 == str2);",
+      "options": [
+        {"option": "true", "isCorrect": false},
+        {"option": "false", "isCorrect": true},
+        {"option": "It will throw a runtime error", "isCorrect": false},
+        {"option": "It will not compile", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Which Java keyword is used to implement method overloading?",
+      "options": [
+        {"option": "overload", "isCorrect": false},
+        {"option": "overridden", "isCorrect": false},
+        {"option": "override", "isCorrect": false},
+        {"option": "None of the above", "isCorrect": true}
+      ]
+    }
+  ]
+}

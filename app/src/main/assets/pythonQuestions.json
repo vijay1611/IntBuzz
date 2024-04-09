@@ -1,0 +1,94 @@
+{
+  "questions": [
+    {
+      "question": "What is the output of the following code?\n\n```python\nprint(2 + 2 * 3)\n```",
+      "options": [
+        {"option": "8", "isCorrect": false},
+        {"option": "10", "isCorrect": true},
+        {"option": "12", "isCorrect": false},
+        {"option": "14", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Which data type is mutable in Python?",
+      "options": [
+        {"option": "Tuple", "isCorrect": false},
+        {"option": "String", "isCorrect": false},
+        {"option": "List", "isCorrect": true},
+        {"option": "Set", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What does the 'range()' function in Python return?",
+      "options": [
+        {"option": "A list of integers", "isCorrect": false},
+        {"option": "A generator object", "isCorrect": true},
+        {"option": "A dictionary", "isCorrect": false},
+        {"option": "A tuple", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Which keyword is used to define a function in Python?",
+      "options": [
+        {"option": "def", "isCorrect": true},
+        {"option": "function", "isCorrect": false},
+        {"option": "define", "isCorrect": false},
+        {"option": "func", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What will be the output of the following code?\n\n```python\na = [1, 2, 3]\nb = a\nb.append(4)\nprint(a)\n```",
+      "options": [
+        {"option": "[1, 2, 3, 4]", "isCorrect": true},
+        {"option": "[1, 2, 3]", "isCorrect": false},
+        {"option": "[1, 2, 3, 4, 4]", "isCorrect": false},
+        {"option": "Error", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What does the 'strip()' method do in Python?",
+      "options": [
+        {"option": "Remove whitespace from both ends of a string", "isCorrect": true},
+        {"option": "Remove a specific character from a string", "isCorrect": false},
+        {"option": "Strip the characters from the middle of a string", "isCorrect": false},
+        {"option": "None of the above", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What does the 'len()' function do in Python?",
+      "options": [
+        {"option": "Return the length of a string", "isCorrect": true},
+        {"option": "Return the number of elements in a list", "isCorrect": true},
+        {"option": "Return the size of a file", "isCorrect": false},
+        {"option": "None of the above", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What is the output of the following code?\n\n```python\nx = (1, 2, 3)\nprint(type(x))\n```",
+      "options": [
+        {"option": "List", "isCorrect": false},
+        {"option": "Tuple", "isCorrect": true},
+        {"option": "Dictionary", "isCorrect": false},
+        {"option": "Set", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What does the 'append()' method do in Python?",
+      "options": [
+        {"option": "Add an element to the beginning of a list", "isCorrect": false},
+        {"option": "Add an element to the end of a list", "isCorrect": true},
+        {"option": "Remove an element from a list", "isCorrect": false},
+        {"option": "Sort the elements of a list", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Which statement is used to exit from a loop in Python?",
+      "options": [
+        {"option": "break", "isCorrect": true},
+        {"option": "continue", "isCorrect": false},
+        {"option": "return", "isCorrect": false},
+        {"option": "exit", "isCorrect": false}
+      ]
+    }
+  ]
+}

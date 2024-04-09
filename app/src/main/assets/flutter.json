@@ -1,0 +1,94 @@
+{
+  "questions": [
+    {
+      "question": "What is Flutter?",
+      "options": [
+        {"option": "A programming language", "isCorrect": false},
+        {"option": "A mobile development framework", "isCorrect": true},
+        {"option": "A database management system", "isCorrect": false},
+        {"option": "A testing framework", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Which language is primarily used for Flutter app development?",
+      "options": [
+        {"option": "Java", "isCorrect": false},
+        {"option": "Kotlin", "isCorrect": false},
+        {"option": "Dart", "isCorrect": true},
+        {"option": "Swift", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What is the purpose of the 'main()' function in a Flutter app?",
+      "options": [
+        {"option": "To initialize the app's state", "isCorrect": false},
+        {"option": "To define the app's UI", "isCorrect": false},
+        {"option": "To specify the entry point of the app", "isCorrect": true},
+        {"option": "To handle user input events", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Which widget is used to create a material design button in Flutter?",
+      "options": [
+        {"option": "FlatButton", "isCorrect": false},
+        {"option": "RaisedButton", "isCorrect": true},
+        {"option": "IconButton", "isCorrect": false},
+        {"option": "TextButton", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What does the 'setState()' method do in Flutter?",
+      "options": [
+        {"option": "Updates the state of a StatefulWidget", "isCorrect": true},
+        {"option": "Navigates to a different screen", "isCorrect": false},
+        {"option": "Handles user input events", "isCorrect": false},
+        {"option": "Fetches data from an API", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What is the purpose of 'BuildContext' in Flutter?",
+      "options": [
+        {"option": "To define the layout of a widget", "isCorrect": false},
+        {"option": "To access the state of a widget", "isCorrect": false},
+        {"option": "To manage navigation within the app", "isCorrect": false},
+        {"option": "To provide information about the location of a widget in the widget tree", "isCorrect": true}
+      ]
+    },
+    {
+      "question": "Which widget is used to display a list of items in Flutter?",
+      "options": [
+        {"option": "ListView", "isCorrect": true},
+        {"option": "GridView", "isCorrect": false},
+        {"option": "ScrollView", "isCorrect": false},
+        {"option": "Column", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What is the purpose of 'async' and 'await' keywords in Dart?",
+      "options": [
+        {"option": "To define asynchronous functions", "isCorrect": true},
+        {"option": "To define lambda functions", "isCorrect": false},
+        {"option": "To handle exceptions in code", "isCorrect": false},
+        {"option": "To specify type annotations", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Which command is used to create a new Flutter project?",
+      "options": [
+        {"option": "flutter init", "isCorrect": false},
+        {"option": "flutter new", "isCorrect": false},
+        {"option": "flutter create", "isCorrect": true},
+        {"option": "flutter start", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What does the 'Navigator' class do in Flutter?",
+      "options": [
+        {"option": "Manages HTTP requests", "isCorrect": false},
+        {"option": "Manages navigation between screens", "isCorrect": true},
+        {"option": "Manages state in a widget tree", "isCorrect": false},
+        {"option": "Manages animations and transitions", "isCorrect": false}
+      ]
+    }
+  ]
+}

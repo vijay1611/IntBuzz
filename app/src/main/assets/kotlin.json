@@ -1,0 +1,94 @@
+{
+  "questions": [
+    {
+      "question": "What is Kotlin?",
+      "options": [
+        {"option": "A programming language for building web applications", "isCorrect": false},
+        {"option": "A programming language for building Android applications", "isCorrect": true},
+        {"option": "A JavaScript library for building user interfaces", "isCorrect": false},
+        {"option": "A database management system", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Which company developed Kotlin?",
+      "options": [
+        {"option": "Apple", "isCorrect": false},
+        {"option": "Google", "isCorrect": false},
+        {"option": "JetBrains", "isCorrect": true},
+        {"option": "Facebook", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What is the purpose of 'val' keyword in Kotlin?",
+      "options": [
+        {"option": "To declare a mutable variable", "isCorrect": false},
+        {"option": "To declare a variable whose value cannot be changed after initialization", "isCorrect": true},
+        {"option": "To declare a variable with a null value", "isCorrect": false},
+        {"option": "To declare a variable with a default value", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What does 'fun' keyword indicate in Kotlin?",
+      "options": [
+        {"option": "A function declaration", "isCorrect": true},
+        {"option": "A variable declaration", "isCorrect": false},
+        {"option": "A class declaration", "isCorrect": false},
+        {"option": "A loop declaration", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "Which of the following is NOT a Kotlin visibility modifier?",
+      "options": [
+        {"option": "private", "isCorrect": false},
+        {"option": "public", "isCorrect": false},
+        {"option": "protected", "isCorrect": false},
+        {"option": "package", "isCorrect": true}
+      ]
+    },
+    {
+      "question": "What is the equivalent of Java's 'null' in Kotlin?",
+      "options": [
+        {"option": "undefined", "isCorrect": false},
+        {"option": "None", "isCorrect": false},
+        {"option": "nil", "isCorrect": false},
+        {"option": "null", "isCorrect": true}
+      ]
+    },
+    {
+      "question": "What is the purpose of 'lateinit' keyword in Kotlin?",
+      "options": [
+        {"option": "To declare a variable with a nullable type", "isCorrect": false},
+        {"option": "To declare a variable with a non-null type", "isCorrect": false},
+        {"option": "To delay the initialization of a non-null variable", "isCorrect": true},
+        {"option": "To mark a variable as immutable", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What does the 'when' keyword represent in Kotlin?",
+      "options": [
+        {"option": "A loop statement", "isCorrect": false},
+        {"option": "A conditional expression", "isCorrect": true},
+        {"option": "A null safety operator", "isCorrect": false},
+        {"option": "An exception handling mechanism", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What is the purpose of 'is' keyword in Kotlin?",
+      "options": [
+        {"option": "To check if two objects are equal", "isCorrect": false},
+        {"option": "To compare two numeric values", "isCorrect": false},
+        {"option": "To check if an object is of a certain type", "isCorrect": true},
+        {"option": "To perform bitwise operations", "isCorrect": false}
+      ]
+    },
+    {
+      "question": "What does the 'inline' keyword do in Kotlin?",
+      "options": [
+        {"option": "Instructs the compiler to copy the function body wherever the function is called", "isCorrect": true},
+        {"option": "Specifies that a function cannot be overridden", "isCorrect": false},
+        {"option": "Marks a class as accessible only within the same module", "isCorrect": false},
+        {"option": "Specifies that a function is defined outside of any class", "isCorrect": false}
+      ]
+    }
+  ]
+}

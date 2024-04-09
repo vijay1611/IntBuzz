@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.IntBuzz" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+       <item name="colorPrimary">#9C27B0</item> -->
+    </style>
+
+    <style name="Theme.IntBuzz" parent="Base.Theme.IntBuzz" />
+</resources>
