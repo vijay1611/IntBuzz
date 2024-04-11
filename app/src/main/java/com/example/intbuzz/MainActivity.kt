@@ -10,6 +10,7 @@ import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.intbuzz.databinding.ActivityMainBinding
 import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import java.io.IOException
 
 class MainActivity : AppCompatActivity(),checkListener{
@@ -42,22 +43,26 @@ class MainActivity : AppCompatActivity(),checkListener{
         binding.btnSubmit.isEnabled = false
         binding.textTopic.text = value+" Questions"
         val jsonValue = getJsonToAttributes(fileName)
-        adapter = TopicAdapter(jsonValue.questions,this)
+        adapter = TopicAdapter(jsonValue.questions,this,false)
 
         Log.d("i***", value.toString())
         binding.rvMain.adapter = adapter
        binding.rvMain.layoutManager = LinearLayoutManager(this)
 
-        binding.btnSubmit.isClickable = adapter.getQuestion().size==10
+       // binding.btnSubmit.isClickable = adapter.getQuestion().size==10
 
 
 
 
 
             binding.btnSubmit.setOnClickListener {
-//               // startActivity(Intent(this()))
-//             var count =
-//                Log.d("count*", count.toString())
+              var score=Gson().toJson(adapter.getQuestion(),
+                  object :TypeToken<ArrayList<Question>>() {}.type
+              )
+             var intent = Intent(this,ResultActivity::class.java)
+                intent.putExtra("score",score)
+                startActivity(intent)
+
             }
 
 

@@ -8,8 +8,7 @@
     tools:context=".MainActivity">
    <RelativeLayout
        android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       >
+       android:layout_height="wrap_content">
 
        <TextView
            android:id="@+id/text_topic"
@@ -23,9 +22,18 @@
            android:gravity="center"
            android:text="Java Questions"
            android:textSize="24sp" />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Your Answers:"
+           android:textSize="20sp"
+           android:id="@+id/titleSub"
+           android:visibility="gone"
+           android:layout_marginBottom="5dp"
+           android:layout_below="@+id/text_topic"/>
 
      <androidx.recyclerview.widget.RecyclerView
-         android:layout_below="@+id/text_topic"
+         android:layout_below="@+id/titleSub"
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
          android:layout_above="@+id/btnSubmit"

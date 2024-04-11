@@ -11,8 +11,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.intbuzz.databinding.TopicItemViewBinding
 
 
-class TopicAdapter(private val list:List<Question>,val checkListener: checkListener) : RecyclerView.Adapter<TopicAdapter.TopicViewHolder>(){
-    //var selectedRadioButton: RadioButton? = null
+class TopicAdapter(private val list:List<Question>,val checkListener: checkListener,val isResult:Boolean=true) : RecyclerView.Adapter<TopicAdapter.TopicViewHolder>(){
+    var selectedRadioButton: RadioButton? = null
 
 
     fun getQuestion():List<Question>{
@@ -35,14 +35,13 @@ class TopicAdapter(private val list:List<Question>,val checkListener: checkListe
     }
     @SuppressLint("ResourceType")
     private fun checkAnswer(option: RadioButton, isCorrect: Boolean) {
-      /*  selectedRadioButton?.apply {
-            setBackgroundResource(Color.TRANSPARENT)
-        }
-        selectedRadioButton = option*/
+//        selectedRadioButton?.apply {
+//            setBackgroundResource(Color.TRANSPARENT)
+//        }
+//        selectedRadioButton = option
         if (isCorrect) {
             option.setBackgroundResource(R.color.green)
-        } else {
-            option.setBackgroundResource(R.color.red)
+
         }
     }
     private fun clearSelection(holder: TopicViewHolder) {
@@ -54,45 +53,53 @@ class TopicAdapter(private val list:List<Question>,val checkListener: checkListe
 
     override fun onBindViewHolder(holder: TopicViewHolder, position: Int) {
 
+        holder.radioGroup.setOnCheckedChangeListener(null) // Remove listener temporarily
+        holder.radioGroup.clearCheck() // Clear any existing checked state
         holder.itemQuestion.text = "${position + 1}. " + list[position].question
         holder.option1.text = list[position].options[0].option
         holder.option2.text = list[position].options[1].option
         holder.option3.text = list[position].options[2].option
         holder.option4.text = list[position].options[3].option
 
-        /*if (list[position].options[0].isSelected) {
-            holder.option1.isChecked = true
-        } else if (list[position].options[1].isSelected) {
-            holder.option2.isChecked = true
-        } else if (list[position].options[2].isSelected) {
-            holder.option3.isChecked = true
-        } else if (list[position].options[3].isSelected) {
-            holder.option4.isChecked = true}*/
-
-        holder.radioGroup.setOnCheckedChangeListener { group, checkedId ->
-            when (checkedId) {
-                R.id.option1 -> {
-                    list[position].isCorrect = list[position].options[0].isCorrect
-                    list[position].options[0].isSelected = holder.option1.isChecked
-                }
-
-                R.id.option2 -> {
-                    list[position].isCorrect = list[position].options[1].isCorrect
-                    list[position].options[1].isSelected = holder.option2.isChecked
-                }
-
-                R.id.option3 -> {
-                    list[position].isCorrect = list[position].options[2].isCorrect
-                    list[position].options[2].isSelected = holder.option3.isChecked
-                }
-
-                R.id.option4 -> {
-                    list[position].isCorrect = list[position].options[3].isCorrect
-                    list[position].options[3].isSelected = holder.option4.isChecked
-                }
-            }
-            checkListener.isAllAnswered(list.none { it.isCorrect == null })
+        holder.option1.isChecked = list[position].options[0].isSelected == true
+        holder.option2.isChecked = list[position].options[1].isSelected == true
+        holder.option3.isChecked = list[position].options[2].isSelected == true
+        holder.option4.isChecked = list[position].options[3].isSelected == true
+        if(isResult){
+            checkAnswer(holder.option1,list[position].options[0].isCorrect)
+            checkAnswer(holder.option2,list[position].options[1].isCorrect)
+            checkAnswer(holder.option3,list[position].options[2].isCorrect)
+            checkAnswer(holder.option4,list[position].options[3].isCorrect)
         }
+
+        holder.radioGroup.setOnCheckedChangeListener { group, id ->
+            if (id != -1) {
+                when (id) {
+                    R.id.option1 -> {
+                        list[position].isCorrect = list[position].options[0].isCorrect
+                        list[position].options[0].isSelected = true
+                    }
+
+                    R.id.option2 -> {
+                        list[position].isCorrect = list[position].options[1].isCorrect
+                        list[position].options[1].isSelected = true
+                    }
+
+                    R.id.option3 -> {
+                        list[position].isCorrect = list[position].options[2].isCorrect
+                        list[position].options[2].isSelected = true
+                    }
+
+                    R.id.option4 -> {
+                        list[position].isCorrect = list[position].options[3].isCorrect
+                        list[position].options[3].isSelected = true
+                    }
+                }
+                checkListener.isAllAnswered(list.none{it.isCorrect==null})
+            }
+        }
+
+
 
 
 
